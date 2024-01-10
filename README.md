@@ -1,1 +1,1 @@
-All my favourite projects, collected throughout the interned
+All my favourite projects, collected throughout the internet
