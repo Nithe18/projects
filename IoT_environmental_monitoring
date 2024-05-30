@@ -1,0 +1,76 @@
+#include "MQ135.h"
+#include "thingProperties.h"
+#include "DHT.h"
+
+#define DHTpin 5
+#define DHTTYPE DHT22
+
+DHT dht(DHTpin, DHTTYPE);
+int mq135SensorPin = 34;
+
+void setup() {
+  
+  Serial.begin(9600);
+  
+  delay(1500); 
+
+  // Defined in thingProperties.h
+  initProperties();
+
+  // Connect to Arduino IoT Cloud
+  ArduinoCloud.begin(ArduinoIoTPreferredConnection);
+
+  setDebugMessageLevel(2);
+  ArduinoCloud.printDebugInfo();
+
+  // Initialize DHT sensor
+  dht.begin();
+}
+
+void loop() {
+  ArduinoCloud.update();
+  
+  float hm = dht.readHumidity();
+  Serial.print("Humidity: ");
+  Serial.println(hm);
+  
+  float temp = dht.readTemperature();
+  Serial.print("Temperature: ");
+  Serial.println(temp);
+  
+  humidity = hm;
+  temperature = temp;
+  
+  int airqualityvalue = analogRead(mq135SensorPin);
+  Serial.print("Gas Value: ");
+  Serial.println(airqualityvalue);
+  
+  airquality = airqualityvalue;
+  
+  String airQualityMessage;
+  if (airqualityvalue < 200) {
+    airQualityMessage = "Good";
+  } else if (airqualityvalue >= 200 && airqualityvalue <= 250) {
+    airQualityMessage = "Moderate";
+  } else {
+    airQualityMessage = "Unhealthy";
+  }
+  
+  message = "Temperature = " + String(temperature) + "  Humidity = " + String(humidity) + "  Air Quality = " + airQualityMessage;
+}
+
+void onTemperatureChange() {
+  // Add your code here to act upon Temperature change
+}
+
+void onHumidityChange() {
+  // Add your code here to act upon Humidity change
+}
+
+void onAirqualityChange() {
+  // Add your code here to act upon Airquality change
+}
+
+void onMessageChange() {
+  // Add your code here to act upon Message change
+}
