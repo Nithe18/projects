@@ -1,1 +1,1 @@
-All my favourite projects, collected throughout the internet and projects done through courses.
+All my favourite projects, done through coursework and collected from the web.
