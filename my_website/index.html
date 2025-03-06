@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon1.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nitheesh Vikraman</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/logo1.png"
+          alt="Bankist logo"
+          class="nav__logo"
+          id="logo"
+          designer="Nitheesh"
+          data-version-number="3.0"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Experience</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Education</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn" href="#">ViewCV</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <!-- <h1 onclick="alert('HTML event')"> -->
+        <h1 class="Nitheesh">Nitheesh Vikraman</h1>
+        <h2 class="Nitheesh_h">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-navigation"></use>
+          </svg>
+          Newcastle upon Tyne, United Kingdom
+        </h2>
+
+        <h4>
+          A passionate Computer Science graduate with expertise in web
+          development, programming, and data analysis.
+        </h4>
+        <p class="date">
+          Important Note: This is not a fully responsive website, this works
+          properly only on desktop
+        </p>
+        <button class="btn--text btn--scroll-to">
+          More about me &DownArrow;
+        </button>
+        <img
+          src="img/hero1.png"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Experience</h2>
+        <h3 class="section__header">
+          I have experience in both technical and practical sides, gained from
+          past jobs and training courses.
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/cict-lazy.jpg"
+          data-src="img/cict.jpg"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Project & Website Administrator</h5>
+          <p class="date">CICT Newcastle, UK (06/2024 - 09/2024)</p>
+          <p>
+            CICT, a learning centre for asylum seekers and refugees in Newcastle
+            upon Tyne. I joined there as a Project Administrator and found out
+            that they had an inactive website since 2020. I decided to take
+            charge of the site, made major updates, and ensured it stayed
+            current by regularly adding events.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Warehouse Associate</h5>
+          <p class="date">Amazon, Newcastle, UK (06/2024 - 09/2024)</p>
+          <p>
+            Handled receiving, checking, and organizing Amazon products in the
+            warehouse. Picked, packed, and shipped customer orders quickly and
+            accurately. Ranked among the top 5 out of 500 new hires during the
+            2024 peak season for speed and quality work. It was a great
+            experience that taught me time management, punctuality, and
+            teamwork.
+          </p>
+        </div>
+        <img
+          src="img/grow-lazy1.jpg"
+          data-src="img/grow1.jpg"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/digital-lazy1.jpg"
+          data-src="img/digital1.jpg"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-tablet"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">JavaScript Master Course</h5>
+          <p class="date">Udemy (07/2024 - 12/2024)</p>
+          <p>
+            I took this course while pursuing my Master's at Northumbria
+            University. As I developed an interest in website development, I
+            built five different projects as part of the course, one of which is
+            an online banking application(displayed here) which has an UI with
+            various banking features. More of my projects can be found in the
+            project section.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Projects</h2>
+        <h3 class="section__header">
+          I've worked on various projects, including website development and
+          data analysis. Some of my favorites are listed in the tabs below.
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+            style="color: white"
+          >
+            <span>1.</span> Online Banking Application
+          </button>
+          <button
+            class="btn operations__tab operations__tab--2"
+            data-tab="2"
+            style="color: white"
+          >
+            <span>2.</span>Time Series Analysis
+          </button>
+          <button
+            class="btn operations__tab operations__tab--3"
+            data-tab="3"
+            style="color: white"
+          >
+            <span>3.</span>My Portfolio Website
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-log-in"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            A web application that makes Online banking simpler
+          </h5>
+          <p>
+            This is a banking web application I built during a Udemy course. It
+            includes four users with different balances and transactions. The
+            app features a simple login with initials and a PIN. Users can
+            transfer money, with real-time updates for both sender and receiver.
+            They can also request loans if they’ve previously received at least
+            10% of the requested amount. Additionally, users have the option to
+            manage their accounts.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-bar-chart"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            UK Crime Data Analysis: Trends & Insights
+          </h5>
+          <p>
+            This project explores crime trends across the UK using big data
+            processing with PySpark and time series analysis. It examines crime
+            categories, tracks yearly fluctuations, and analyzes the impact of
+            events like the COVID-19 lockdown on crime rates. The analysis
+            provides data-driven insights through visualization and statistical
+            decomposition.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-chrome"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Personal Portfolio Website</h5>
+          <p>
+            A fully responsive portfolio website built to showcase my projects,
+            skills, and experience. It features a clean UI, smooth navigation,
+            and structured sections for my work, education, and contact
+            information. This website is continuously updated to reflect my
+            latest work and achievements.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Education & Training Courses</h2>
+        <h3 class="section__header">
+          This slider gives a quick look at the degrees and training courses
+          I’ve completed along the way in my career.
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              <svg>
+                <use xlink:href="img/icons.svg#icon-monitor"></use></svg
+              >MSc Advanced Computer Science
+            </h5>
+            <p class="date">01/2023 - 06/2024</p>
+            <blockquote class="testimonial__text">
+              I earned an MSc in Advanced Computer Science with a 2:1 from
+              Northumbria University, gaining expertise in advanced programming,
+              databases, machine learning, big data, cloud computing, research
+              methods, and project management. This program enhanced my
+              technical skills and problem-solving abilities in modern computing
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-11.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Northumbria University</h6>
+              <p class="testimonial__location">Newcastle, UK</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              <svg>
+                <use xlink:href="img/icons.svg#icon-cpu"></use>
+              </svg>
+              BE Computer Science
+            </h5>
+            <p class="date">09/2018 - 07/2022</p>
+            <blockquote class="testimonial__text">
+              I completed a BE in Computer Science with 79%, gaining a strong
+              foundation in data structures, algorithms, operating systems, and
+              mathematics. This program honed my analytical and problem-solving
+              skills in software development and computing
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-22.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">
+                University College of Engineering, Panruti
+              </h6>
+              <p class="testimonial__location">Tamilnadu, India</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              <svg>
+                <use xlink:href="img/icons.svg#icon-database"></use>
+              </svg>
+              Python with Django and Database
+            </h5>
+            <p class="date">10/2022 - 01/2023</p>
+            <blockquote class="testimonial__text">
+              After completing my undergraduate degree, I pursued an 80-hour
+              certified training course in Python with Django and MongoDB. This
+              program enhanced my understanding of web development, backend
+              frameworks, and database management, allowing me to build dynamic
+              and scalable applications.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-33.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Networkz systems, Marthandam</h6>
+              <p class="testimonial__location">Tamilnadu, India</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          A quote that helped me overcome my procrastination: "No one is ready
+          to listen to your story until you win."
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">
+        Like my profile? Send a message
+      </button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link btn--show-modal" href="">Contact</a>
+        </li>
+      </ul>
+      <img src="img/icon1.png" alt="Logo" class="footer__logo" />
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">Email Nitheesh Viraman & get in touch</h2>
+      <form
+        class="modal__form"
+        action="https://formspree.io/f/xzzdnlye"
+        method="POST"
+      >
+        <label for="email">Your Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="subject">Subject</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Enter subject"
+          required
+        />
+
+        <label for="message">Your Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="10"
+          placeholder="Write your message here..."
+          required
+        ></textarea>
+
+        <button class="btn" type="submit">Send Message &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
